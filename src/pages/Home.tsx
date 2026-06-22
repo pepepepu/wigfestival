@@ -229,9 +229,7 @@ export function Home() {
                   <Text>Erick e Pedro vão comemorar mais um ano de vida.</Text>
                   <Text>
                     E, para marcar a ocasião, todos os convidados terão a
-                    oportunidade de viver uma noite como outra pessoa.Escolha
-                    sua melhor peruca, abrace seu alter ego e venha fazer parte
-                    dessa história.
+                    oportunidade de viver uma noite como outra pessoa.
                   </Text>
                   <Text>
                     A única regra da festa é bem simples:{" "}
