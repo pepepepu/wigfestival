@@ -62,12 +62,16 @@ const Text = styled.p`
   text-transform: lowercase;
   ${textureEffectGreen}
   text-align: justify;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Highlight = styled.div`
   flex: 1;
   padding: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 4.5dvw;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -75,6 +79,10 @@ const Highlight = styled.div`
   align-items: center;
   width: 100%;
   margin: 40px 0px;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
 
   span {
     ${textureEffectWhite}
@@ -98,10 +106,24 @@ const Button = styled.button`
     opacity 0.2s;
   ${textureEffectGreen}
 
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
     transform: none;
+  }
+`;
+
+const SuccessButton = styled(Button)`
+  font-size: 5dvw;
+  letter-spacing: -0.5px;
+  margin-top: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -114,6 +136,10 @@ const Input = styled.input`
   font-weight: 300;
   color: rgba(255, 255, 255, 1);
   background: transparent;
+
+  @media (min-width: 768px) {
+    font-size: 1.1rem;
+  }
 
   &::placeholder {
     color: rgba(255, 255, 255, 1);
@@ -131,9 +157,17 @@ const CheckboxContainer = styled.label`
   font-size: 4dvw;
   width: 100%;
 
+  @media (min-width: 768px) {
+    font-size: 1.1rem;
+  }
+
   span {
-    font-size: 1.2rem;
+    font-size: 4.5dvw;
     font-weight: 300;
+
+    @media (min-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
 `;
 
@@ -343,16 +377,9 @@ export function Home() {
               <Text style={{ textAlign: "center" }}>
                 Obrigado, {name}.<br></br> nos vemos lá
               </Text>
-              <Button
-                onClick={handleCalendar}
-                style={{
-                  fontSize: "1.5rem",
-                  letterSpacing: "-0.5px",
-                  marginTop: "20px",
-                }}
-              >
+              <SuccessButton onClick={handleCalendar}>
                 adicionar na agenda
-              </Button>
+              </SuccessButton>
             </Card>
           )}
         </AnimatePresence>
