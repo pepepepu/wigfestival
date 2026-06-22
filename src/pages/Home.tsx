@@ -56,9 +56,9 @@ const Logo = styled.img`
 `;
 
 const Text = styled.p`
-  font-size: 1.5rem;
+  font-size: 5dvw;
   font-weight: 300;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.5px;
   text-transform: lowercase;
   ${textureEffectGreen}
   text-align: justify;
@@ -83,7 +83,7 @@ const Highlight = styled.div`
 
 const Button = styled.button`
   background: transparent;
-  font-size: 2rem;
+  font-size: 7dvw;
   letter-spacing: -2px;
   width: 90%;
   max-width: 600px;
@@ -110,7 +110,7 @@ const Input = styled.input`
   padding: 0.9rem 1.5rem;
   border-radius: 2px;
   border: 2px solid rgba(255, 255, 255, 1);
-  font-size: 1.1rem;
+  font-size: 5dvw;
   font-weight: 300;
   color: rgba(255, 255, 255, 1);
   background: transparent;
@@ -128,7 +128,7 @@ const CheckboxContainer = styled.label`
   margin-top: 1rem;
   cursor: pointer;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 4dvw;
   width: 100%;
 
   span {
