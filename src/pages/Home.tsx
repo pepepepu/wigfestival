@@ -206,7 +206,7 @@ export function Home() {
       "Festa wigFestival! Lembre-se: Peruca obrigatória.",
     );
     const location = encodeURIComponent(
-      "Rua C, nº 73, Santos Dumont, Aracaju, Sergipe",
+      "Rua F, nº 64, Santos Dumont, Aracaju, Sergipe",
     );
     const startDateGCal = "20260711T230000Z";
     const endDateGCal = "20260712T050000Z";
@@ -219,7 +219,7 @@ export function Home() {
 
     if (isIOS || isAndroid) {
       const icsData =
-        "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART;TZID=America/Maceio:20260711T200000\nDTEND;TZID=America/Maceio:20260712T020000\nSUMMARY:wigFestival\nDESCRIPTION:Festa wigFestival! Lembre-se: Peruca obrigatória.\nLOCATION:Rua C, nº 73, Santos Dumont, Aracaju, Sergipe\nEND:VEVENT\nEND:VCALENDAR";
+        "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART;TZID=America/Maceio:20260711T200000\nDTEND;TZID=America/Maceio:20260712T020000\nSUMMARY:wigFestival\nDESCRIPTION:Festa wigFestival! Lembre-se: Peruca obrigatória.\nLOCATION:Rua F, nº 64, Santos Dumont, Aracaju, Sergipe\nEND:VEVENT\nEND:VCALENDAR";
 
       const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
       const url = window.URL.createObjectURL(blob);
@@ -326,7 +326,7 @@ export function Home() {
                     <strong
                       style={{ fontWeight: "800", textDecoration: "underline" }}
                     >
-                      Rua C, nº 73, Santos Dumont
+                      Rua F, nº 64, Santos Dumont
                     </strong>
                     , para celebrar essa noite especial com a gente.
                   </Text>
